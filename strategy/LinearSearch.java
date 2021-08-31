@@ -16,7 +16,7 @@ public class LinearSearch implements SearchBehavior{
      */
     public boolean contains(ArrayList<String> data, String item){
         for(int i=0; i<data.size(); i++){
-            if(data.get(i).equalsIgnoreCase(item))
+            if(data.equalsIgnoreCase(item))
                 return true;
         }
         return false;

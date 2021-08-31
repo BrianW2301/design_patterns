@@ -15,9 +15,9 @@ public class GuestList {
  * @param String that titles the GuestList
  */
      public GuestList(String title){
-         LinearSearch ls=new LinearSearch();
+         this.searchBehavior=new LinearSearch();
+         this.people=new ArrayList<>();
          this.title=title;
-         searchBehavior=ls;
   }
 /**
  * checks if a person with a given name is already on the guest list. Adds them if false
@@ -28,7 +28,7 @@ public class GuestList {
           if (people.contains(person)){
               return false;
           }
-          else people.add(person);
+          people.add(person);
           return true;
      }
 /**
@@ -41,7 +41,7 @@ public class GuestList {
              people.remove(person);
              return true;
          }
-         else return false;
+         return false;
      }
 /**
  * accessor method for title of a GuestList
