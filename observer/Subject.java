@@ -1,5 +1,9 @@
 package observer;
-
+/**
+ * Interface for Subjects
+ * @author Brian
+ * 
+ */
 public interface Subject {
 
 public void registerObserver(Observer observer);

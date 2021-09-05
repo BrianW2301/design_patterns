@@ -1,5 +1,9 @@
 package observer;
-
+/**
+ * Interface for Observers
+ * @author Brian
+ * 
+ */
 public interface Observer {
 
 
