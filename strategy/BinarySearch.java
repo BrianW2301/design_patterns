@@ -32,7 +32,7 @@ public class BinarySearch implements SearchBehavior{
       if(data.get(middle).equalsIgnoreCase(item)){
         return true;
       }
-      if(data.get(mid).compareTo(item)<0)
+      if(data.get(middle).compareTo(item)<0)
         low=middle+1;
       else
         high=middle-1;
