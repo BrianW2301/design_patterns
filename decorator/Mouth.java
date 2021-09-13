@@ -5,13 +5,11 @@ package decorator;
 public class Mouth extends CharacterDecorator{
     /**
      * Mouth constructor
-     * Takes a Character, passes it to CharacterDecerator, 
-     * and adds a mouth to the Character
+     * Takes a Character, passes it to CharacterDecerator to add a mouth
      * @param character
      */
     public Mouth(Character character){
         super(character);
-        customize();
     }
     /**
      * Adds a mouth to a potato head Character by 

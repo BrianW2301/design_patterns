@@ -12,9 +12,10 @@ public abstract class CharacterDecorator extends Character{
      */
     public CharacterDecorator (Character character){
         this.character = character;
-        for (int i=0; i<character.sections.size();i++){
-            this.sections.add(character.sections.get(i));
+        for (String section : character.sections) {
+            this.sections.add(section);
         }
+        customize();
     }
     public abstract void customize();
 }

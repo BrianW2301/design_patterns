@@ -5,13 +5,11 @@ package decorator;
 public class Nose extends CharacterDecorator{
     /**
      * Nose constructor
-     * Takes a Character, passes it to CharacterDecerator, 
-     * and adds a nose to the Character
+     * Takes a Character, passes it to CharacterDecerator to add a nose
      * @param character
      */
     public Nose(Character character){
         super(character);
-        customize();
     }
     /**
      * Adds a nose to a potato head Character by 

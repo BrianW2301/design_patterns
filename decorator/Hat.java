@@ -5,13 +5,11 @@ package decorator;
 public class Hat extends CharacterDecorator{
     /**
      * Hat cnostructor
-     * Takes a Character, passes it to CharacterDecerator, 
-     * and adds a hat to the Character
+     * Takes a Character, passes it to CharacterDecerator to add a hat
      * @param character
      */
     public Hat(Character character){
         super(character);
-        customize();
     }
     /**
      * Adds a hat to a potato head Character by 

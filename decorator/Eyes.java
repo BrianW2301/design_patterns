@@ -5,13 +5,11 @@ package decorator;
 public class Eyes extends CharacterDecorator{
     /**
      * Eyes constructor
-     * Takes a Character, passes it to CharacterDecerator, 
-     * and adds eyes to the Character
+     * Takes a Character, passes it to CharacterDecerator to add eyes
      * @param character
      */
     public Eyes (Character character){
         super(character);
-        customize();
     }
     /**
      * Adds eyes to a potato head Character by 
