@@ -18,8 +18,8 @@ public abstract class Character {
      * sections ArrayList and printing the Strings
      */
     public void draw(){
-        for (String sections1 : sections) {
-            System.out.println(sections1);
+        for (String section : sections) {
+            System.out.println(section);
         }
     }
 }
