@@ -17,6 +17,6 @@ public class TinyHomePlan extends HousePlan {
         features.add("Multi-use applications");
     }
     public String toString(){
-        
+        return ("Tiny House" +super.toString());
     }
 }

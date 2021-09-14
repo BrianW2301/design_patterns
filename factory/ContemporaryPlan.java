@@ -16,6 +16,6 @@ public class ContemporaryPlan extends HousePlan {
         features.add("Open Floor Plan");
     }
     public String toString(){
-        
+        return ("Contemporary Home" +super.toString());
     }
 }

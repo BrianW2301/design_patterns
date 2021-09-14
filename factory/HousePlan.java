@@ -14,6 +14,8 @@ public abstract class HousePlan {
         this.squareFeet = squareFeet;
         materials = new ArrayList<String>();
         features = new ArrayList<String>();
+        setMaterials();
+        setFeatures();
     }
     protected abstract void setMaterials();
     protected abstract void setFeatures();
@@ -33,6 +35,19 @@ public abstract class HousePlan {
         return squareFeet;
     }
     public String toString(){
-
+        String string = "";
+        string += "\nSquare Feet: "+squareFeet;
+        string += "\nRoom: " +numRooms;
+        string += "\nWindows: " +numWindows;
+        string += "\n\nMaterials:";
+        for (String material : materials){
+            string += "\n - "+material;
+        }
+        string += "\n\nFeatures:";
+        for (String feature : features){
+            string += "\n - "+feature;
+        }
+        string += "\n";
+        return string;
     }
 }

@@ -15,6 +15,6 @@ public class LogCabinPlan extends HousePlan{
         features.add("Rustic Effect");
     }
     public String toString(){
-        
+        return ("Log Cabin" +super.toString());
     }
 }
