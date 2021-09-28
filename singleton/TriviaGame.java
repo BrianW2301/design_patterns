@@ -60,6 +60,7 @@ public class TriviaGame {
     private boolean playRound(){
         int questionNum = rand.nextInt(questions.size());
         System.out.println(questions.get(questionNum));
+        System.out.print("Enter answer: ");
         if (questions.get(questionNum).isCorrect(reader.nextInt())){
             System.out.println("That is correct!");
             score ++;
