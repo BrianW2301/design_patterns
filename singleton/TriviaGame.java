@@ -23,11 +23,12 @@ public class TriviaGame {
         score = 0;
     }
     /**
-     * Creates a TriviaGame object
-     * @return the TriviaGame
+     * Checks if a TriviaGame object exists and if it does not, creates a TriviaGame object
+     * @return the TriviaGame object
      */
     public static TriviaGame getInstance(){
-        triviaGame = new TriviaGame();
+        if (triviaGame == null)
+            triviaGame = new TriviaGame();
         return triviaGame;
     }
     /**
